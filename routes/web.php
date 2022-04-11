@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route :: get("/matakuliah", function(){
+    $judul="Halaman list Mata Kuliah : Menampilkan seluruh data Mata Kuliah dan Nama Program
+    Studi";
+    $matakuliah=['mtl','haha'];
+    
+     return view("matakuliah.index",compact('matakuliah'));
+  });
