@@ -7,6 +7,8 @@
     <title>Halaman List</title>
 </head>
 <body>
-<h1>{{$judul}}</h1>
-    <hr/>
-    
+   
+<h1>halaman list matakuliah </h1>
+<hr/>
+
+
