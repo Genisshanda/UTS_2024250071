@@ -22,5 +22,5 @@ Route :: get("/matakuliah", function(){
     Studi";
     $matakuliah=['mtl','haha'];
     
-     return view("matakuliah.index",compact('matakuliah'));
+     return view("matakuliah.index",compact('matakuliah','judul'));
   });
