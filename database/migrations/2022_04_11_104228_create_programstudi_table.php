@@ -15,11 +15,13 @@ class CreateProgramstudiTable extends Migration
     {
         Schema::create('programstudi', function (Blueprint $table) {
             $table->id();
+
             $table->string("kode_prodi", 4);
             $table->string("nama_prodi",50);
             $table->text("alamat");
             $table->string("tlp",15);
             $table->string("website",255);
+             $table->foreignId('id_fakultas');
             $table->timestamps();
         });
     }
